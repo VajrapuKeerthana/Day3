@@ -69,7 +69,7 @@ console.log(b);
 
 //! Higher order function
 
-function hof(a){
+/*function hof(a){
       return a;
 };
 let x = hof(function(){return "Hello i am a callback function"});
@@ -80,7 +80,7 @@ function parent(callback){
 
 let x = parent(add(5,5));
 return a+b
-}
+}*/
 
 // ! closure
 function x(){
