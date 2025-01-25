@@ -44,10 +44,41 @@ console.log(ele);*/
 console.log(ele);*/
 
 
-let btn = document.querySelector("#btn");
+/*let btn = document.querySelector("#btn");
 //! addEventListener("event",()=>{})
     btn.addEventListener("click",()=>{
     
-    })
+    })*/
+
+/*let ele = document.createElement("h1");
+ele.innerText = "Dynamic creation of html element";
+ele.id = "demo";
+
+let image = document.createElement("image");
+image.src = "/.3606208.jpg";
+console.log(image);
+
+document.body.appendChild(ele);
+document.body.appendChild(image);*/
+
+let form = document.querySelector("form");
+let username = document.getElementById("uName");
+let mail = document.getElementById("uMail");
+let PSW = document.getElementById("uPass");
 
 
+form.addEventListener("submit",(event)=>{
+    event.preventDefault();
+
+    let uname= username.ariaValueMax;
+    let uemail = mail.value;
+    let upass = PSW.value;
+    let userDetails={
+        uname, uemail, upass
+    }
+    console.log(userDetails);
+    localStorage.setItem("userData", isSecureContext.stringify(userDetails))
+    
+
+}
+)
